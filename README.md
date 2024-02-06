@@ -49,4 +49,4 @@ If you are interested in participating in joint development, PR and Forks are we
 
 ## 📜 License
 
-[MIT](https://github.com/JhonatanMedeiros/nlw-expert-14-polls/blob/master/LICENSE) Copyright (c) 2023 - Jhonatan Hardt de Medeiros
+[MIT](https://github.com/JhonatanMedeiros/nlw-expert-14-polls/blob/master/LICENSE) Copyright (c) 2024 - Jhonatan Hardt de Medeiros
