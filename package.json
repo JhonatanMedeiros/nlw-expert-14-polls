@@ -1,13 +1,26 @@
 {
   "name": "nlw-expert-14-polls",
   "version": "1.0.0",
-  "description": "",
+  "private": false,
+  "description": "This project is a simple API for creating and managing polls. It was developed during the Next Level Week 14 event, promoted by Rocketseat.",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/http/server.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "fastify",
+    "prisma",
+    "typescript",
+    "zod",
+    "rocketseat",
+    "nlw",
+    "next level week"
+  ],
+  "author": "Jhonatan Hardt de Medeiros",
+  "repository": {
+    "url": "git+https://github.com/JhonatanMedeiros/nlw-expert-14-polls.git",
+    "type": "git"
+  },
   "license": "MIT",
   "dependencies": {
     "@prisma/client": "^5.9.1",
