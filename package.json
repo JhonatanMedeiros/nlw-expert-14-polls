@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "private": false,
   "description": "This project is a simple API for creating and managing polls. It was developed during the Next Level Week 14 event, promoted by Rocketseat.",
-  "main": "index.js",
+  "main": "dist/http/server.js",
   "scripts": {
-    "dev": "tsx watch src/http/server.ts"
+    "start": "node dist/http/server.js",
+    "build": "tsc",
+    "dev": "tsx watch src/http/server.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
   },
   "keywords": [
     "fastify",
@@ -32,6 +36,12 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.16",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
     "prisma": "^5.9.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"

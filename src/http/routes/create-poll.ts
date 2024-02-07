@@ -1,12 +1,12 @@
-import { FastifyInstance } from "fastify"
-import { z } from "zod"
-import { prisma } from "../../lib/prisma"
+import { type FastifyInstance } from 'fastify'
+import { z } from 'zod'
+import { prisma } from '../../lib/prisma'
 
-export async function createPoll(app: FastifyInstance) {
+export async function createPoll (app: FastifyInstance): Promise<void> {
   app.post('/polls', async (request, reply) => {
     const createPollBody = z.object({
       title: z.string(),
-      options: z.array(z.string()),
+      options: z.array(z.string())
     })
 
     const { title, options } = createPollBody.parse(request.body)
@@ -22,7 +22,6 @@ export async function createPoll(app: FastifyInstance) {
       }
     })
 
-    return reply.status(201).send({ pollId: poll.id })
+    await reply.status(201).send({ pollId: poll.id })
   })
-
 }
