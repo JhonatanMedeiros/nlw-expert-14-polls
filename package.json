@@ -5,9 +5,11 @@
   "description": "This project is a simple API for creating and managing polls. It was developed during the Next Level Week 14 event, promoted by Rocketseat.",
   "main": "dist/http/server.js",
   "scripts": {
-    "start": "node dist/http/server.js",
+    "start": "npm run build && node dist/http/server.js",
     "build": "tsc",
     "dev": "tsx watch src/http/server.ts",
+    "migrate:run": "prisma migrate dev",
+    "migrate:reset": "prisma migrate reset",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "prepare": "husky"

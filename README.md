@@ -2,38 +2,45 @@
 
 This project is a simple API for creating and managing polls. It was developed during the Next Level Week 14 event, promoted by Rocketseat.
 
-## Docs in progress 🚧
-
-
-## 🚀 Getting Started
+## 💻 Getting Started
 
 ## ⌨️ Development
 
-### Clone Code
+
+### ☕ Environment
+Create a `.env` file in the root of the project, using the `.env.example` file as a model.
 
 ```bash
-git clone git@github.com:JhonatanMedeiros/nlw-expert-14-polls
+cat .env.example >> .env
 ```
 
-### Install Dependencies
+### 🚀 Install Dependencies
+First, install the project dependencies.
 
 ```bash
 npm install
 ```
 
-### Development server
+### 🎲 Data Base Migrations
+Run the migrations to create the database tables.
+```bash
+npm run migrate:run
+```
+For reset the database, run the command below.
+```bash
+npm run migrate:reset
+```
 
+### 🏗 Start the Server
+Run the development server.
 ```bash
 npm run dev
 ```
 
-### Build Release
-
+Run the production server.
 ```bash
-npm run build
+npm run start
 ```
-
-After building, the application will be found in the `dist` directory.
 
 ## 🛠 Technology Stack
 
